@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #35313B;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 340px;
+    padding: 30px 20px;
+    border-radius: 1rem;
+}
+
+.container h2 {
+    font-size: 16px;
+}
+
+.container label {
+    font-size: 12px;
+    color: #707070;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.container .span-error {
+    color: #ff0000;
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.short-inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.container .form-container input {
+    border-radius: 0.3rem;
+    border: 1px solid #e2e2e2;
+    height: 2.3rem;
+    padding: 3px 10px;
+    width: 100%;
+}
+
+.container .form-container .short-input {
+    width: 100%;
+}
+
+.container .form-container input[type="submit"] {
+    background-color: #2b75ff;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.error-input {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #ffffff;
+    border: 1px solid #ff0000;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+
+.error-input .error {
+    width: 100%;
+}
+
+.container .form-container .error-input input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.error-input i {
+    color: #707070;
+    padding-left: 10px;
+}
+
+.error-input .fa-circle-exclamation {
+    color: #ff0000;
+    padding: 0 10px
+}

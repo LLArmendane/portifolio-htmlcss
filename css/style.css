@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --primary: #FF1457;
+    --secondary: #613C4C;
+    --text-color: #fff;
+    --text-secondary: #2B2C30;
+    --text-tertiary: #35313B;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    background-color: var(--primary);
+    color: var(--text-color);
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.home-container {
+    background-image: url(../img/bg-home.png);
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-container h1 {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.home-container p,
+h1 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.home-container h1,
+p {
+    padding-top: 28px;
+}
+
+.texts-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.separator {
+    height: 1px;
+    background-color: #FF1457;
+    margin-top: 28px;
+}
+
+/* PROJETOS */
+.project-description1 {
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--secondary);
+    padding: 30px 60px;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.projects h2 {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.projects p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.project-description1 .btn-project {
+    background-color: var(--primary);
+    padding: 10px 20px;
+    border: none;
+    font-size: 13px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 28px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+
+.project-description1 .btn-project:hover {
+    background-color: var(--secondary);
+    border: 1px solid var(--primary);
+}
+
+.project-photo {
+    background-image: url(../img/project1.png);
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 2 1 0;
+}
+
+
+@media screen and (min-width: 280px) {
+    .header-container {
+        font-size: 7px;
+    }
+
+    .home-container {
+        height: 70vh;
+    }
+
+    .home-container h1 {
+        font-size: 25px;
+        width: 70%;
+    }
+
+    .home-container p {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .separator {
+        width: 30%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        font-size: 9px;
+    }
+
+    .home-container h1 {
+        font-size: 35px;
+        width: 80%;
+    }
+
+    .home-container p {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .separator {
+        width: 40%;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header-container {
+        font-size: 10px;
+    }
+
+    .home-container {
+        height: 80vh;
+    }
+
+    .home-container h1 {
+        font-size: 40px;
+        width: 80%;
+    }
+
+    .home-container p {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .separator {
+        width: 20%;
+    }
+}

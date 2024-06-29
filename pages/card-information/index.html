@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-information</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/08fbccdec3.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Card information</h2>
+        <form class="form-container">
+            <div class="input-container">
+                <label for="name">Name on card</label>
+                <input type="text" value="Nabil Elsawy">
+            </div>
+            <div class="input-container">
+                <label for="card-number">Credit card number</label>
+                <div class="error-input">
+                    <i class="fa-sharp fa-regular fa-credit-card"></i>
+                    <input type="text" class="error" value="4012345678901234">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <span for="card-number-error" class="span-error">Please enter a valid card number</span>
+            </div>
+            <div class="short-inputs">
+                <div class="input-container">
+                    <label for="expiration-date">Expiration date</label>
+                    <input class="short-input" type="text" value="01/24">
+                </div>
+
+                <div class="input-container">
+                    <label for="security-code">Security code</label>
+                    <input class="short-input" type="text" value="789">
+                </div>
+            </div>
+            <input type="submit" value="Save and continue">
+        </form>
+    </div>
+</body>
+
+</html>
